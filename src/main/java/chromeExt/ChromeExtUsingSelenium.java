@@ -46,7 +46,7 @@ public class ChromeExtUsingSelenium {
         driver.findElement(By.id("txtUsername")).
                 sendKeys("yusufbatur2017@gmail.com");
         driver.findElement(By.id("txtPassword")).
-                sendKeys("Yusuf1985@");
+                sendKeys("aaaaaa");
         driver.findElement(By.id("buttonForSignIn")).click();
         Thread.sleep(3000);
 
