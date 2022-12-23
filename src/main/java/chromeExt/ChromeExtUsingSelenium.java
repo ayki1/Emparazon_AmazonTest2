@@ -30,14 +30,14 @@ public class ChromeExtUsingSelenium {
 
         //Chrome EKLENTİ İKONUNU TIKLAMA
         Robot robot = new Robot();
-        robot.mouseMove(900,60);
+        robot.mouseMove(900,55);
         robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
         Thread.sleep(1000);
         robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
         Thread.sleep(1000);
 
         //Emparazon İKONUNU TIKLAMA
-        robot.mouseMove(800,180);
+        robot.mouseMove(800,185);
         robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
         Thread.sleep(1000);
         robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
@@ -65,10 +65,7 @@ public class ChromeExtUsingSelenium {
         // ÜRÜNÜN Emparazon "Stok Miktarını Görüntüle" menüsünü tıkla
         driver.findElement(By.id("stockFinder")).click();
 
-        //System.out.println("CevirBtn.getText() = " + CevirBtn.getText());
-
         System.out.println("TEST BİTTİ");
 
     }
-
 }
