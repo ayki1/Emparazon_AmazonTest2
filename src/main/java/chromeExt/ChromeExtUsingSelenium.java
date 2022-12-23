@@ -44,8 +44,8 @@ public class ChromeExtUsingSelenium {
         Thread.sleep(1000);
 
         //Emparazon Eklentisi Kullanıcı girişi için; mail ve şifre GİRİŞ YAP
-        driver.findElement(By.id("txtUsername")).sendKeys("sibelkay2020@gmail.com");
-        driver.findElement(By.id("txtPassword")).sendKeys("As121212+");
+        driver.findElement(By.id("txtUsername")).sendKeys("ayhan@gmail.com");
+        driver.findElement(By.id("txtPassword")).sendKeys("Ayhan");
         driver.findElement(By.id("buttonForSignIn")).click();
         Thread.sleep(3000);
 
