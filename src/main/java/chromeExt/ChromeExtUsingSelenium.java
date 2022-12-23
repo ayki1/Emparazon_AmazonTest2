@@ -64,6 +64,10 @@ public class ChromeExtUsingSelenium {
 
         // ÜRÜNÜN Emparazon "Stok Miktarını Görüntüle" menüsünü tıkla
         driver.findElement(By.id("stockFinder")).click();
+        Thread.sleep(5000);
+
+        //Chrome Kapat
+        driver.quit();
 
         System.out.println("TEST BİTTİ");
 
