@@ -1,0 +1,14 @@
+Emparazon Google Chrome Eklentisi ile Amazon.com Web Testi
+=========================
+
+Test Senaryosu (Test Steps)
+-------------------------
+
+* Chrome eklenti ikonu aktif hale getirilir.
+* amazon.com Web Sayfası açılır.
+* Chrome Emparazon eklentisi aktif hale getirilir.
+* Emparazon eklentisi Kullanıcı mail ve şifre girişi yapılır.
+* amazon.com da bir ürün ismi aratılır.(örnek=Wooden Spoon)
+* amazon.com da arama sonucunda ilk ürün seçilir.
+* Ürünün Emparazon "Liste Skoru" menüsünü tıklanır ve detaylar gösterilir
+* Ürünün Emparazon "Kar Marjı Hesapla" menüsünü tıklanır ve detaylar gösterilir

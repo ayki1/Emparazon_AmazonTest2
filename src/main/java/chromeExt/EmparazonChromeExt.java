@@ -6,13 +6,17 @@ import java.io.File;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-public class ChromeExtUsingSelenium {
+public class EmparazonChromeExt{
+    //String userEmail="sibalkay2020@gmail.com";
 
     public static void main(String[] args) throws InterruptedException, AWTException {
+
+        String userEmail="aaaaa@gmail.com";
+        String userPassword="aaaaa";
+        String urunAdi="Wooden Spoon";
 
         //Chrome Ayarlama
         WebDriverManager.chromedriver().setup();
@@ -44,15 +48,15 @@ public class ChromeExtUsingSelenium {
 
         //Emparazon Eklentisi Kullanıcı girişi için; mail ve şifre GİRİŞ YAP
         driver.findElement(By.id("txtUsername")).
-                sendKeys("yusufbatur2017@gmail.com");
+                sendKeys(userEmail);
         driver.findElement(By.id("txtPassword")).
-                sendKeys("aaaaaa");
+                sendKeys(userPassword);
         driver.findElement(By.id("buttonForSignIn")).click();
         Thread.sleep(3000);
 
         //amazon.com da ÜRÜN ADINI YAZ VE ARAMA Yap-
         driver.findElement(By.id("twotabsearchtextbox")).
-                sendKeys("shoe");
+                sendKeys(urunAdi);
         driver.findElement(By.id("nav-search-submit-button")).click();
         Thread.sleep(3000);
 
@@ -60,13 +64,16 @@ public class ChromeExtUsingSelenium {
         driver.findElement(By.className("s-image")).click();
         Thread.sleep(3000);
 
+        //ÜRÜNÜN Emparazon "Liste Skoru" menüsünü tıkla ve detay göster
+        driver.findElement(By.id("listScoreBtn")).click();
+
         //ÜRÜNÜN Emparazon "KAR MARJI HESAPLA" menüsünü tıkla ve detay göster
-        driver.findElement(By.id("profitMargin")).click();
-        Thread.sleep(3000);
+        //driver.findElement(By.id("profitMargin")).click();
+        //Thread.sleep(3000);
 
         // ÜRÜNÜN Emparazon "ÜRÜN FİYAT DEĞİŞTİR" menüsü girdi yap ve
         // verileri yazdır
-        WebElement urunFiyat= driver.findElement(By.id("priceInput"));
+        /*WebElement urunFiyat= driver.findElement(By.id("priceInput"));
         System.out.println("productPrice.getText() = " + urunFiyat.getText());
 
         WebElement netKar= driver.findElement(By.id("netRevenue"));
@@ -76,7 +83,7 @@ public class ChromeExtUsingSelenium {
         System.out.println("productPrice.getText() = " + urunFiyat.getText());
         System.out.println("netKar.getText() = " + netKar.getText());
 
-        Thread.sleep(3000);
+        Thread.sleep(3000);*/
 
         //Chrome Kapat
         //driver.quit();
